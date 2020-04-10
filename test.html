@@ -1,0 +1,958 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="CNKI远见搜索,文献,期刊,硕士,论文,博士,论文,会议,报纸,年鉴,专利,成果,标准,参考文献,图片,学术,研究,报告,文章,专业检索,下载,职称" />
+    <meta name="description" content="CNKI远见搜索，是中国知网（CNKI）旗下的专业学术搜索平台，资源囊括了期刊、博士论文、硕士论文、工具书、专利、标准、学术图片、科技成果、知网书等资源，提高一框式快捷搜索与高级搜索等专业检索功能，提供在线阅读与下载服务。" />
+    <title>安全与环境学报_期刊详情_远见搜索</title>
+    <link href="/Content/base?v=EkkcygwdqnAJGvmh20z1DFa9fFfLHcr4onUPAIWuitU1" rel="stylesheet"/>
+
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+
+
+    <script src="/Scripts/layer/layer.js"></script>
+
+    <script src="/Scripts/datetimepicker/WdatePicker.js"></script>
+
+    <script src="/Scripts/jquery.cookie.js"></script>
+
+    <script src="/Scripts/main.js"></script>
+
+    <script src="/Scripts/msgbox.js"></script>
+
+    
+    <link href="/Content/book?v=TEFMXbmvoMEeZA704l5iAZtXn2CZ4d5nj-9JDe9mUyE1" rel="stylesheet"/>
+
+    <style>
+        .qk-main .qk-fx span {
+            width: 24px;
+        }
+    </style>
+
+    <script>
+        var jsPublicKey = '-----BEGIN PUBLIC KEY-----MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC8iKgnXm7hTxEr9FcZtBk/xbL8JwSeGpgpGMdd7TgBIARcWXhYeGRP428QYb8//Buls3ZLJAbc4Z8HxFP5yvVMksQEBkR5NyN2Jx3i83jUDX/STLy9ZhCBskNBt1zqtTRw4eEjvmsP5iZ4PyQUXUttyY2Mbjb9AZl87lTlrDCRQwIDAQAB-----END PUBLIC KEY-----';
+    </script>
+    <style>
+        .bk-box .bk-box a img { vertical-align: middle; max-width: 100px; max-height: 100px; width: expression(this.width > 100 && this.width / 100 >= this.height / 100 ? 100 : true); height: expression(this.height > 100 && this.width / 100 < this.height / 100 ? 100 : true); }
+
+        .head-fen .search-item .result-nav { background-position: 546px 25px; }
+
+        .head-fen .search-item .result-nav a { padding: 0 6px; }
+        /*头部种类样式*/
+        .filtrate .itemm { z-index: 1; }
+
+        /*.yj-ewm {
+            margin-top: -30px;
+            margin-left: 117px;
+        }*/
+    </style>
+</head>
+<body class="springBg">
+    <a id="closeSpringBg" href="javascript:void(0)" class="closeSpringBg"></a>
+    <!--head-->
+    <input type="hidden" name="name" id="pageUrl" value="http://yuanjian.cnki.net" />
+    <input type="hidden" name="hidAMID" id="hidAMID" value="" />
+    <div class="head-wrap">
+        <div class="head-fen clearfix">
+            <div class="head-logo left"><a href="/"><img src="http://yuanjian.cnki.net/images/result/result_logo.jpg" width="115" height="40" /></a></div>
+            <div class="search-item left">
+                
+<div class="result-nav  positionR" id="topSearchNav">
+    <a onclick="checkClick(this)" href="/home" class="" data-code="0">全部</a>|<a onclick="    checkClick(this)" href="/home/?type=corpus" class="" data-code="1">文献</a>|<a onclick="checkClick(this)" href="/cjfd/Home" class="active" data-code="3">期刊</a>|<a onclick="checkClick(this)" href="/cdmd/home" class="" data-code="4">学位论文</a>|<a onclick="checkClick(this)" href="http://bianke.cnki.net/" class="" data-code="8" target="_blank">知网书</a>|<a href="/Image/home/index" data-code="9" onclick="checkClick(this)">学术图片</a>|<a onclick="checkClick(this)" href="http://xuewen.cnki.net" class="" data-code="2" target="_blank">百科</a>|<a onclick="checkClick(this)" href="http://epub.cnki.net/kns/brief/result.aspx?dbPrefix=CIPD" class="" data-code="5" target="_blank">会议</a>|<a href="javascript:void(0)" class="more">更多</a>
+    <ul class="positionA">
+        <li class="jiao positionA"></li>
+        
+        
+        <li><a onclick="checkClick(this)" href="http://epub.cnki.net/kns/brief/result.aspx?dbPrefix=CYFD" class="" data-code="6" target="_blank">年鉴</a></li>
+        <li><a onclick="checkClick(this)" href="http://epub.cnki.net/kns/brief/result.aspx?dbPrefix=SCOD" class="" data-code="7" target="_blank">专利</a></li>
+        <li class="nborder"><a href="http://epub.cnki.net/kns/brief/result.aspx?dbPrefix=CISD" target="_blank">标准</a></li>
+        <li><a href="http://epub.cnki.net/KNS/brief/result.aspx?dbprefix=SNAD" target="_blank">科技成果</a></li>
+    </ul>
+</div>
+    <div id="MultiTermSearch" class="clearfix choose">
+                    <div class="xiugai clearfix word5">
+                        <div class="btn" id="btn">
+                                <a class="remove displayN" onclick="removeSearchboxItems(this)" href="javascript:void(0)"></a>
+                                <a class="add" onclick="addMulitySearchboxItems(this)" href="javascript:void(0)"></a>
+                        </div>
+                        <div class="selectwrap" id="selectwrap">
+                            <div class="select ">
+                                <p class="item" data-code="name"> 刊&nbsp;&nbsp;名 </p>
+                                <input name="name" class="left MulSerchKey" type="text" value="" autocomplete="off" style="" maxlength="100" />
+                                    <a class="positionA sweep" href="javascript:void(0)" style="display:none;"></a>
+                                <!--提示词显示区域-->
+                                <div class="history advance">
+                                </div>
+                                <div class="yearwrap displayN">
+                                    <div class="fromwrap left positionR">
+                                        <i class="left">从</i>
+                                        <p class="p from right positionR">
+                                                <b>不&nbsp;&nbsp;限</b>
+                                                <span class="positionA"></span>
+                                        </p>
+                                        <ul class="fromlist positionA">
+                                            <li>不&nbsp;&nbsp;限</li>
+                                            <li>1915年</li>
+                                            <li>1949年</li>
+                                            <li>1979年</li>
+                                        </ul>
+                                    </div>
+                                    <div class="towrap left positionR">
+                                        <i class="left">到</i>
+                                        <p class="p to right positionR">
+                                                <b>不&nbsp;&nbsp;限</b>
+                                                <span class="positionA"></span>
+                                        </p>
+                                        <ul class="tolist positionA">
+                                            <li class="ndy">不&nbsp;&nbsp;限</li>
+                                            <li>1979年</li>
+                                            <li>1949年</li>
+                                            <li>1915年</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <ul class="itemlist">
+                                    <li val="name">刊&nbsp;&nbsp;名</li>
+                                    <li val="issn">&nbsp;ISSN&nbsp;</li>
+                                    <li val="cn">&nbsp;CN&nbsp;</li>
+                                    <li val="unit">主办单位</li>
+                                    <li val="public">出版地</li>
+                                </ul>
+                            </div>
+                            <div class="searchwrap positionA  ">
+                                <a class="search" href="javascript:void(0)" id="search" onclick="cjfdSearch()">远见搜索</a>
+                                <a href="javascript:;" class="yj-ewm left"><img class="yj-ewm-img" src="/Images/home/yj-ewm-img.png" height="158" width="125" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+    </div>
+
+
+
+<!--高级搜索页面布局模板  程序不对该内容修改-->
+<div id="searchHtmlTemplate" class="displayN">
+    <div class="xiugai clearfix word5">
+        <div class="btn" id="btn">
+            <a class="remove DISPALYITEM" onclick="removeSearchboxItems(this)" href="javascript:void(0)"></a>
+            <a class="add" onclick="addMulitySearchboxItems(this)" href="javascript:void(0)"></a>
+        </div>
+        <div class="selectwrap" id="selectwrap">
+            <div class="select">
+                <p class="item">全&nbsp;&nbsp;文</p>
+                <input class="left MulSerchKey" name="" type="text" autocomplete="off" value="" maxlength="100" />
+                    <a class="positionA sweep" href="javascript:void(0)" style="display:none;"></a>
+                <!--提示词显示区域-->
+                <div class="history advance">
+                </div>
+                <div class="yearwrap displayN">
+                    <div class="fromwrap left positionR">
+                        <i class="left">从</i><p class="p from right positionR"><b>不&nbsp;&nbsp;限</b><span class="positionA"></span></p>
+
+                        <ul class="fromlist positionA">
+                            <li>不&nbsp;&nbsp;限</li>
+                            <li>1915年</li>
+                            <li>1949年</li>
+                            <li>1979年</li>
+                        </ul>
+                    </div>
+                    <div class="towrap left positionR">
+                        <i class="left">到</i><p class="p to right positionR"><b>不&nbsp;&nbsp;限</b><span class="positionA"></span></p>
+
+                        <ul class="tolist positionA">
+                            <li class="ndy">不&nbsp;&nbsp;限</li>
+                            <li>1979年</li>
+                            <li>1949年</li>
+                            <li>1915年</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="itemlist">
+                        <li val="name">刊&nbsp;&nbsp;名</li>
+                        <li val="issn">&nbsp;ISSN&nbsp;</li>
+                        <li val="cn">&nbsp;CN&nbsp;</li>
+                        <li val="unit">主办单位</li>
+                        <li val="public">出版地</li>
+                </ul>
+            </div>
+            <div class="searchwrap positionA">
+                    <a class="search" href="javascript:void(0)" id="search" onclick="cjfdSearch()">远见搜索</a>
+    <a href="javascript:;" class="yj-ewm left"><img class="yj-ewm-img" src="/Images/home/yj-ewm-img.png" height="158" width="125" alt=""></a>
+                            </div>
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="headfen-right right positionR" id="login-head">
+                <a style="cursor:pointer;" class="top-ewm positionR">手机远见搜索<img style="top:18px;" class="yj-ewm-img" src="/Images/home/yj-ewm-img.png" height="158" width="125" alt="" /></a>
+
+                
+                <i class="left">|</i><span class="sz left"><a style="cursor:pointer;">设置</a></span>
+                <ul class="positionA">
+                    <li class="jiao positionA"></li>
+                    <li id="ShutDownHistory" onclick="shutDownHistory()">关闭历史记录</li>
+                    <li id="OpenHistory" onclick="openHistory()">打开历史纪录</li>
+                    <li onclick="clearHistory()">清除历史记录</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="/Scripts/searchArticle.js"></script>
+
+    <!--content-->
+    <div id="PageContent">
+        
+<input type="hidden" id="PYKM" value="AQHJ" />
+<input type="hidden" id="year" value="全部往期" />
+<input type="hidden" id="page" value="2" />
+<input type="hidden" id="ZWKM" value="安全与环境学报" />
+<input type="hidden" id="cjfdCount" value=" " />
+<input type="hidden" id="content" value="" />
+
+<div class="cl"></div>
+<div class="qk-main">
+    <div class="qk-fx positionA" style="height:auto;width:50px;"><div class="share">
+    <span style="text-align:left;">分享</span>
+    <div id="bdshare" class="bdsharebuttonbox">
+        <a title="分享到QQ空间" class="bds_qzone" data-cmd="qzone" style="width:24px; height:24px; cursor:pointer;"></a>
+        <a title="分享到新浪微博" class="bds_tsina" data-cmd="tsina" style="width:24px; height:24px;cursor:pointer;"></a>
+        <a title="分享到微信" class="bds_weixin" data-cmd="weixin" style="width:24px; height:24px;cursor:pointer;"></a>
+        
+    </div>
+</div>
+<script>
+    window._bd_share_config = { "common": { "bdSnsKey": {}, "bdPopTitle": "强烈推荐【安全与环境学报】_CNKI远见搜索", "bdText": "强烈推荐【安全与环境学报】_CNKI远见搜索    主办：北京理工大学", "bdDesc": "强烈推荐【安全与环境学报】_CNKI远见搜索    主办：北京理工大学", "bdMini": "2", "bdMiniList": false, "bdStyle": "0", "bdSize": "24", "bdPic": "" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+
+    $(function () {
+        //判断浏览器是否是IE7
+        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+        var isOpera = userAgent.indexOf("Opera") > -1; //判断是否Opera浏览器  
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器
+        if (isIE) {
+            var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+            reIE.test(userAgent);
+            var fIEVersion = parseFloat(RegExp["$1"]);
+            if (fIEVersion == 7) {
+                //  alert("IE7");
+                $('#bdshare').css('margin-top', '25px');
+            }
+         
+        }//isIE end
+
+    });
+</script>
+
+</div>
+    <div class="qk-con">
+        <div class="path">
+            <a href="/CJFD/Home">期刊首页</a> >
+<a href="/CJFD/Home/Result?tag=B&code=KB&title=%e5%b7%a5%e7%a8%8b%e7%a7%91%e6%8a%80I">工程科技I</a> >            <a href="/CJFD/Home/Result?tag=B&code=KB027&title=%e7%8e%af%e5%a2%83%e7%a7%91%e5%ad%a6%e4%b8%8e%e8%b5%84%e6%ba%90%e5%88%a9%e7%94%a8">环境科学与资源利用</a> >            <span style="color:#787878">安全与环境学报</span>
+        </div>
+        <div class="part01">
+            <div class="left part01-left"><a href="/CJFD/Detail/Index/AQHJ"><img style="cursor:pointer;" src="http://c61.cnki.net/CJFD/big/AQHJ.jpg" onerror="javascript: this.src = 'http://yuanjian.cnki.net/images/qikan/nomagacover.jpg'; this.onerror = null;" width="299" height="392" alt="安全与环境学报" /></a></div>
+            <div class="right part01-right">
+                <div class="r-title" style="height:auto;">
+                    <a title="安全与环境学报" href="/CJFD/Detail/Index/AQHJ">安全与环境学报</a>
+                        <br />
+                        <span>Journal of Safety and Environment</span>
+                </div>
+                 <div class="r-tip">
+                            <span class="tip01">独家</span>
+                                                    <span class="tip02">核心</span>
+                                                                            <span class="tip04">获奖</span>
+                </div>
+                <div class="r-line">
+                    <span class="line-left left" title="北京理工大学"><strong>主　　办：</strong>北京理工大学</span>
+                    <span class="line-right right"><strong>ISSN：</strong>1009-6094</span>
+                </div>
+                <div class="r-line">
+                        <span class="line-left left"><strong>周　　期：</strong>双月</span>
+                        <span class="line-right right"><strong>CN：</strong>11-4537/X</span>
+                </div>
+                <div class="r-line">
+                        <span class="line-left left"><strong>出 版 地：</strong>北京市</span>
+
+                        <span class="line-right right"><strong>邮发代号：</strong>2-770</span>
+
+                </div>
+                <div class="r-line">
+                        <span class="line-left left"><strong>语　　种：</strong>中文</span>
+
+                        <span class="line-right right"><strong>创刊时间：</strong>2001（收录年度1994-2019）</span>
+
+                </div>
+                <div class="r-line">
+                        <span class="line-left left"><strong>开　　本：</strong>大16开</span>
+
+
+                </div>
+                    <div class="r-line positionR">
+                        <div class="outer">
+                                <div class="like-title">
+                                    <p>Caj-cd规范获奖期刊</p>
+                                    <p></p>
+
+                                    <div class="triangle"></div>
+                                </div>
+                                <strong class="left w-disp">期刊荣誉：</strong>
+                                        <span class="icon-jp"></span> <span class="text-blank">Caj-cd规范获奖期刊</span>
+                        </div>
+                    </div>
+                    <script>
+                        //期刊荣誉 该刊被以下数据库收录显示更多
+                        $(".qk-main .qk-con .part01 .part01-right .r-line .outer").hover(function () {
+                            $(this).children(".like-title").css("display", "block");
+                        }, function () {
+                            $(this).children(".like-title").css("display", "none");
+                        })
+                    </script>
+
+                    <div class="r-line"><strong class="left w-disp">核心期刊：</strong><span class="left">中文核心期刊（2014）</span></div>
+
+                    <div class="r-line positionR">
+
+                        <div class="outer">
+                                <div class="like-title like-title1">
+                                    <p>CA 化学文摘(美)(2014)</p>
+                                    <p>JST 日本科学技术振兴机构数据库(日)(2018)</p>
+                                    <p>CSCD 中国科学引文数据库来源期刊(2019-2020年度)(含扩展版)</p>
+                                    <p></p>
+
+                                    <div class="triangle"></div>
+                                </div>
+                                <strong class="left w-disp02">该刊被以下数据库收录：</strong>
+                                        <span class="left">CA 化学文摘(美)(2014)</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        <span class="left">JST 日本科学技术振兴机构数据库(日)(2018)</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+        <div class="part02 clearfix" id="Part02">
+            <!--搜索-->
+            <div class="word_knjs left">刊内检索:</div>
+            <div class="clearfix choose positionR left" id="InternalSearchBox">
+                <input type="hidden" value="1" name="ArticleType" />
+                <input id="Order" value="0" type="hidden" />
+                <div class="xiugai clearfix word5">
+                    <div class="btn" id="btn"><a class="remove displayN" href="javascript:void(0)" onclick="removeInternalSearchBoxItems(this)"></a><a class="add" href="javascript:void(0)" onclick="addInternalSearchBoxItems(this)"></a> </div>
+                    <div class="selectwrap" id="selectwrap">
+                        <div class="select">
+                            <p class="item">全&nbsp;&nbsp;文</p>
+                            <input class="left" type="text" value="" autocomplete="off" name="content" maxlength="100">
+                            <a class="positionA sweep displayN" href="javascript:void(0)"></a>
+                            <div class="yearwrap displayN">
+                                <div class="fromwrap left positionR">
+                                    <i class="left">从</i>
+                                    <p class="p from right positionR"><b>不&nbsp;&nbsp;限</b><span class="positionA"></span></p>
+                                    <ul class="fromlist positionA">
+                                        <li>不&nbsp;&nbsp;限</li>
+                                        <li>1915年</li>
+                                        <li>1949年</li>
+                                        <li>1979年</li>
+                                    </ul>
+                                </div>
+                                <div class="towrap left positionR">
+                                    <i class="left">到</i>
+                                    <p class="p to right positionR"><b>不&nbsp;&nbsp;限</b><span class="positionA"></span></p>
+                                    <ul class="tolist positionA">
+                                        <li class="ndy">不&nbsp;&nbsp;限</li>
+                                        <li>1979年</li>
+                                        <li>1949年</li>
+                                        <li>1915年</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="itemlist">
+                                <li val="content">全&nbsp;&nbsp;文</li>
+                                <li val="theme">主&nbsp;&nbsp;题</li>
+                                <li val="title">篇&nbsp;&nbsp;名</li>
+                                <li val="keyword">关键词</li>
+                                <li val="author">作&nbsp;&nbsp;者</li>
+                                <li val="unit">作者单位</li>
+                                <li val="summary">摘&nbsp;&nbsp;要</li>
+                                <li val="reference">参考文献</li>
+                                <li val="searchfund">基&nbsp;&nbsp;金</li>
+                                <li val="originate">文献来源</li>
+                                <li val="publishtime" class="fbsj">发表时间</li>
+                                <li val="mapnumber">中图分类号</li>
+                            </ul>
+                        </div>
+                        <div class="searchwrap positionA"><a class="search" href="javascript:void(0)" id="InternalSearch" onclick="InternalSearch()">搜索</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--添加搜索框模板域-->
+            <div id="InteralSelectTemplate" class="displayN">
+                <div class="xiugai clearfix word5">
+                    <div class="btn" id="btn">
+                        <a class="remove" href="javascript:void(0)" onclick="removeInternalSearchBoxItems(this)"></a>
+                        <a class="add" href="javascript:void(0)" onclick="addInternalSearchBoxItems(this)"></a>
+                    </div>
+                    <div class="selectwrap" id="selectwrap">
+                        <div class="select">
+                            <p class="item">全&nbsp;&nbsp;文</p>
+                            <input class="left" type="text" value="" autocomplete="off" name="content" maxlength="100">
+                            <a class="positionA sweep" style="display:none" href="javascript:void(0)"></a>
+                            <div class="yearwrap displayN">
+                                <div class="fromwrap left positionR">
+                                    <i class="left">从</i>
+                                    <p class="p from right positionR"><b>不&nbsp;&nbsp;限</b><span class="positionA"></span></p>
+                                    <ul class="fromlist positionA">
+                                        <li>不&nbsp;&nbsp;限</li>
+                                        <li>1915年</li>
+                                        <li>1949年</li>
+                                        <li>1979年</li>
+                                    </ul>
+                                </div>
+                                <div class="towrap left positionR">
+                                    <i class="left">到</i>
+                                    <p class="p to right positionR"><b>不&nbsp;&nbsp;限</b><span class="positionA"></span></p>
+                                    <ul class="tolist positionA">
+                                        <li class="ndy">不&nbsp;&nbsp;限</li>
+                                        <li>1979年</li>
+                                        <li>1949年</li>
+                                        <li>1915年</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="itemlist">
+                                <li val="content">全&nbsp;&nbsp;文</li>
+                                <li val="theme">主&nbsp;&nbsp;题</li>
+                                <li val="title">篇&nbsp;&nbsp;名</li>
+                                <li val="keyword">关键词</li>
+                                <li val="author">作&nbsp;&nbsp;者</li>
+                                <li val="unit">作者单位</li>
+                                <li val="summary">摘&nbsp;&nbsp;要</li>
+                                <li val="reference">参考文献</li>
+                                <li val="searchfund">基&nbsp;&nbsp;金</li>
+                                <li val="originate">文献来源</li>
+                                <li val="publishtime" class="fbsj">发表时间</li>
+                                <li val="mapnumber">中图分类号</li>
+                            </ul>
+                        </div>
+                        <div class="searchwrap positionA"><a class="search" href="javascript:void(0)" id="InternalSearch" onclick="InternalSearch()">搜索</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--添加搜索框模板域-->
+        </div>
+        <div class="cl"></div>
+        <!--期刊历史-->
+            <div id="PastMagazine">
+                <div class="qieh">
+                    <ul>
+                        <li class="on">更多往期</li>
+                            <li><a href="/CJFD/Hot/LevelBrowse/AQHJ">栏目浏览</a></li>
+                        <li><a href="/CJFD/Hot/Index/AQHJ" >热点透视</a></li>
+                    </ul>
+                </div>
+                <div class="part03">
+                    <span class="current">全部往期</span><p>|</p>
+                        <span>2019 年</span><p>|</p>
+                        <span>2018 年</span><p>|</p>
+                        <span>2017 年</span><p>|</p>
+                        <span>2016 年</span><p>|</p>
+                        <span>2015 年</span><p>|</p>
+                        <span>2014 年</span><p>|</p>
+                        <span>2013 年</span><p>|</p>
+                        <span>2012 年</span><p>|</p>
+                        <span>2011 年</span><p>|</p>
+                        <span>2010 年</span><p>|</p>
+                        <span>2009 年</span><p>|</p>
+                        <span>2008 年</span><p>|</p>
+                        <span>2007 年</span><p>|</p>
+                        <span>2006 年</span><p>|</p>
+                        <span>2005 年</span><p>|</p>
+                        <span>2004 年</span><p>|</p>
+                        <span>2003 年</span><p>|</p>
+                        <span>2002 年</span><p>|</p>
+                        <span>2001 年</span><p>|</p>
+                        <span>2000 年</span><p>|</p>
+                        <span>1999 年</span><p>|</p>
+                        <span>1998 年</span><p>|</p>
+                        <span>1997 年</span><p>|</p>
+                        <span>1996 年</span><p>|</p>
+                        <span>1995 年</span><p>|</p>
+                        <span>1994 年</span><p>|</p>
+
+                </div>
+                <script>
+                    //年份切换
+                    var span = $(".qk-main .qk-con .part03 span")
+                    span.click(function () {
+                        span.removeClass("current");
+                        $(this).addClass("current");
+                        var year = $(this).html().substring(0, 4);
+                        $("#year").val(year);
+                        $("#page").val("2");
+                        $('#qk-more').html("");
+                        loadCJFDIssue(year);
+                    })
+                </script>
+                <input type="hidden" id="cjfdTotal" value="158" />
+    <div id="CJFDIssue" class="part04 positionR clearfix" style="width:1070px;">
+            <div class="pakage r-bian">
+                <div class="picbox-on" title="安全与环境学报2019年第06期">  
+                    <a href="/cjfd/Home/Detail/AQHJ201906" target="_blank">
+                        <img class="imgurl" src="http://c61.cnki.net/CJFD/big/AQHJ/AQHJ201906.jpg" onerror="javascript:this.src='http://c61.cnki.net/CJFD/big/AQHJ.jpg';this.onerror=null;" width="189" height="248" alt="安全与环境学报2019年第06期" />
+                        <span>2019年第06期</span>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="pakage r-bian">
+                <div class="picbox-on" title="安全与环境学报2019年第05期">  
+                    <a href="/cjfd/Home/Detail/AQHJ201905" target="_blank">
+                        <img class="imgurl" src="http://c61.cnki.net/CJFD/big/AQHJ/AQHJ201905.jpg" onerror="javascript:this.src='http://c61.cnki.net/CJFD/big/AQHJ.jpg';this.onerror=null;" width="189" height="248" alt="安全与环境学报2019年第05期" />
+                        <span>2019年第05期</span>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="pakage r-bian">
+                <div class="picbox-on" title="安全与环境学报2019年第04期">  
+                    <a href="/cjfd/Home/Detail/AQHJ201904" target="_blank">
+                        <img class="imgurl" src="http://c61.cnki.net/CJFD/big/AQHJ/AQHJ201904.jpg" onerror="javascript:this.src='http://c61.cnki.net/CJFD/big/AQHJ.jpg';this.onerror=null;" width="189" height="248" alt="安全与环境学报2019年第04期" />
+                        <span>2019年第04期</span>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="pakage r-bian">
+                <div class="picbox-on" title="安全与环境学报2019年第03期">  
+                    <a href="/cjfd/Home/Detail/AQHJ201903" target="_blank">
+                        <img class="imgurl" src="http://c61.cnki.net/CJFD/big/AQHJ/AQHJ201903.jpg" onerror="javascript:this.src='http://c61.cnki.net/CJFD/big/AQHJ.jpg';this.onerror=null;" width="189" height="248" alt="安全与环境学报2019年第03期" />
+                        <span>2019年第03期</span>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="pakage r-bian">
+                <div class="picbox-on" title="安全与环境学报2019年第02期">  
+                    <a href="/cjfd/Home/Detail/AQHJ201902" target="_blank">
+                        <img class="imgurl" src="http://c61.cnki.net/CJFD/big/AQHJ/AQHJ201902.jpg" onerror="javascript:this.src='http://c61.cnki.net/CJFD/big/AQHJ.jpg';this.onerror=null;" width="189" height="248" alt="安全与环境学报2019年第02期" />
+                        <span>2019年第02期</span>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="pakage r-bian">
+                <div class="picbox-on" title="安全与环境学报2019年第01期">  
+                    <a href="/cjfd/Home/Detail/AQHJ201901" target="_blank">
+                        <img class="imgurl" src="http://c61.cnki.net/CJFD/big/AQHJ/AQHJ201901.jpg" onerror="javascript:this.src='http://c61.cnki.net/CJFD/big/AQHJ.jpg';this.onerror=null;" width="189" height="248" alt="安全与环境学报2019年第01期" />
+                        <span>2019年第01期</span>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="pakage r-bian">
+                <div class="picbox-on" title="安全与环境学报2018年第06期">  
+                    <a href="/cjfd/Home/Detail/AQHJ201806" target="_blank">
+                        <img class="imgurl" src="http://c61.cnki.net/CJFD/big/AQHJ/AQHJ201806.jpg" onerror="javascript:this.src='http://c61.cnki.net/CJFD/big/AQHJ.jpg';this.onerror=null;" width="189" height="248" alt="安全与环境学报2018年第06期" />
+                        <span>2018年第06期</span>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="pakage r-bian">
+                <div class="picbox-on" title="安全与环境学报2018年第05期">  
+                    <a href="/cjfd/Home/Detail/AQHJ201805" target="_blank">
+                        <img class="imgurl" src="http://c61.cnki.net/CJFD/big/AQHJ/AQHJ201805.jpg" onerror="javascript:this.src='http://c61.cnki.net/CJFD/big/AQHJ.jpg';this.onerror=null;" width="189" height="248" alt="安全与环境学报2018年第05期" />
+                        <span>2018年第05期</span>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="pakage r-bian">
+                <div class="picbox-on" title="安全与环境学报2018年第04期">  
+                    <a href="/cjfd/Home/Detail/AQHJ201804" target="_blank">
+                        <img class="imgurl" src="http://c61.cnki.net/CJFD/big/AQHJ/AQHJ201804.jpg" onerror="javascript:this.src='http://c61.cnki.net/CJFD/big/AQHJ.jpg';this.onerror=null;" width="189" height="248" alt="安全与环境学报2018年第04期" />
+                        <span>2018年第04期</span>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="pakage r-bian">
+                <div class="picbox-on" title="安全与环境学报2018年第03期">  
+                    <a href="/cjfd/Home/Detail/AQHJ201803" target="_blank">
+                        <img class="imgurl" src="http://c61.cnki.net/CJFD/big/AQHJ/AQHJ201803.jpg" onerror="javascript:this.src='http://c61.cnki.net/CJFD/big/AQHJ.jpg';this.onerror=null;" width="189" height="248" alt="安全与环境学报2018年第03期" />
+                        <span>2018年第03期</span>
+                    </a>
+                    
+                </div>
+            </div>
+    </div>
+<div id="qk-more">
+        <div class="qk-more"><a href="javascript:void(0)" onclick="loadMoreCJFDIssue();">加载更多...</a></div>
+</div>
+<script>
+    $(function () {
+        onCJFDHover();
+    })
+</script>
+            </div>
+        <!--刊内搜索结果-->
+            <div id="InteralSearchResult">
+            </div>
+
+    </div>
+</div>
+
+    </div>
+    <!--footer-->
+    <div class="foot-wrap">
+        <div class="footer-fen">
+            <a href="//www.cnki.net/gycnki/gycnki.htm" target="_blank" title="关于CNKI">关于CNKI</a>|
+            <a style="cursor:pointer;" onclick="addFavorite('http://yuanjian.cnki.net', 'CNKI远见搜索')" title="收藏远见">收藏远见</a>|
+            <a target="_blank" href="/FeedBack/index" title="用户反馈">用户反馈</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2016-2020 《中国学术期刊（光盘版）》电子杂志社有限公司&nbsp;京ICP证040431号&nbsp;<a target="_blank" href="http://piccache.cnki.net/index/images/gb/271.jpg" style="color:#a3a3a3">网络出版服务许可证 (总)网出证(京)字第 271 号</a>&nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020460" style="color:#a3a3a3">京公网安备 11010802020460 号</a>
+        </div>
+    </div>
+        <div id="dscroll">
+            <div class="top-icon top-icon-special">
+                <a href="/FeedBack/Index" target="_blank" class="feedback feedback-color1">用户反馈</a>
+                <div class="to-top">
+                    <a href="javascript:void(0)" onclick="window.scroll(0,0)" class="top1"></a>
+                    <a href="javascript:void(0)" onclick="window.scroll(0,0)" class="top3" style="display:none;"></a>
+                </div>
+                <script>
+                    $(".to-top").hover(
+                        function () {
+                            $(this).children(".top1").css({ "display": "none" })
+                            $(this).children(".top3").css({ "display": "block" })
+                        },
+                        function () {
+                            $(this).children(".top3").css({ "display": "none" })
+                            $(this).children(".top1").css({ "display": "block" })
+                        })
+                </script>
+            </div>
+        </div>
+    <!--top icon-->
+    <div class="top-icon" id="nodeScroll" style="display:none;">
+        <a style="cursor:pointer;" onclick="window.scroll(0, 0);" class="btn1"></a>
+        <a href="http://www.cnki.com.cn/hqqw.html" target="_blank" class="btn2"></a>
+        <a href="/FeedBack/Index" target="_blank" class="btn3">用户反馈</a>
+    </div>
+
+    <script src="/Scripts/search.js"></script>
+
+    <script src="/Scripts/searchCjfd.js"></script>
+
+    <script>
+        searchConditionPara.DoMainSearch = "http://yuanjian.cnki.net";
+        searchData.XuewenServerUrl = "http://xuewen.cnki.net";
+        searchData.CorpusServerUrl = "http://bianke.cnki.net";
+        searchData.MallServerUrl = "http://mall.cnki.net";
+        var channelType = "3";
+        $(document).ready(function () {
+            literatureSearch();//顶部搜索框事件
+            $(".select input").live("keyup mousedown propertychange", function () {
+                var val = $(this).val();
+                //console.log(val);
+                if (val.length > 0) {
+                    $(this).parent().children(".sweep").show();
+                }
+                else {
+                    $(this).parent().children(".sweep").hide();
+                }
+            });
+            $(".sweep").live("click", function () {
+                $(this).parent().children("input[type='text']").val("");
+                $(this).hide();
+            });
+
+            $("#closeSpringBg").click(function () {
+                $("body").removeClass("springBg");
+            });
+            var cnkinode = $("#cnkinode").val();
+            if (cnkinode && cnkinode == "cnkinode") {
+                $("#dscroll").hide();
+                $("#nodeScroll").show();
+            }
+            //初始化事件
+            initEventBind();
+            try {
+                //关键字提示
+                remember();
+            }
+            catch (ee)
+            { }
+            $(".headfen-right .sz").click(function (event) {
+                //校验是否打开历史纪录
+                if (checkHistoryEnabled()) {
+                    $("#OpenHistory").hide();
+                    $("#ShutDownHistory").show()
+                } else {
+                    $("#OpenHistory").show();
+                    $("#ShutDownHistory").hide();
+                }
+                $(this).siblings("ul").show();
+                event.stopPropagation();//阻止子元素继承父级事件
+            });
+            $("body").click(function () {
+                $(".headfen-right ul").hide()
+            });
+            //组合搜索框
+            bindKeyWordsConfirmOpen();
+            //判断顶部搜索是否为多类型组合搜索
+            var mulitySearchOrNot = $("#MultiTermSearch .xiugai").length > 1;
+            //悬浮顶端搜索框  TODO  待改
+            var scrollTop = 0;
+            var offsetHeight = $(".head-wrap").siblings("#PageContent").offset().top;
+            var baseOffsetTop = offsetHeight;
+            $(window).scroll(function () {
+                scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                if (scrollTop > 0) {
+                    $("#MultiTermSearch .xiugai").hide();
+                    $("#MultiTermSearch .xiugai").eq(0).show().find(".searchwrap").css("display", "block");
+                    if (mulitySearchOrNot) {
+                        var currentOffsetHeight = $(".head-wrap").siblings("#PageContent").offset().top;
+                        $(".head-wrap").siblings("#PageContent").css("margin-top", currentOffsetHeight);
+                    }
+                    else {
+                        $(".head-wrap").siblings("#PageContent").css("margin-top", offsetHeight);
+                    }
+                    $(".head-wrap").addClass("float-head");
+                    $(".to-top").show();//显示浮动按钮 跳转到头部
+                }
+                else {
+                    $(".head-wrap").removeClass("float-head");
+                    if ($("#MultiTermSearch .xiugai").length > 1) {
+                        $("#MultiTermSearch .xiugai").eq(0).find(".searchwrap").css("display", "none");
+                    }
+                    $("#MultiTermSearch .xiugai").show();
+                    $(".head-wrap").siblings("#PageContent").css("margin-top", "");
+
+                    $(".to-top").hide();//隐藏浮动按钮 跳转到头部
+                }
+            })
+            //滚动中 鼠标移动到搜索栏
+            $(".head-fen").hover(function () {
+                if (scrollTop > 0) {
+                    if ($("#MultiTermSearch .xiugai").length > 1) {
+                        $("#MultiTermSearch .xiugai").eq(0).find(".searchwrap").css("display", "none");
+                    }
+                    $("#MultiTermSearch .xiugai").show();
+                }
+            }, function () {
+                if (scrollTop > 0) {
+                    $(".head-wrap").addClass("float-head");
+                    $("#MultiTermSearch .xiugai").hide();
+                    $("#MultiTermSearch .xiugai").eq(0).show().find(".searchwrap").css("display", "block");
+                }
+            })
+
+        });
+        //添加数组IndexOf方法 兼容ie8数组没有indexof方法
+        if (!Array.prototype.indexOf) {
+            Array.prototype.indexOf = function (elt /*, from*/) {
+                var len = this.length >>> 0;
+                var from = Number(arguments[1]) || 0;
+                from = (from < 0) ? Math.ceil(from) : Math.floor(from);
+                if (from < 0)
+                    from += len;
+                for (; from < len; from++) {
+                    if (from in this && this[from] === elt)
+                        return from;
+                }
+                return -1;
+            };
+        }
+
+        function SetHome(obj) {
+            try {
+                var url = window.location.href;
+                obj.style.behavior = 'url(#default#homepage)';
+                obj.setHomePage(url);
+            } catch (e) {
+                alert("设置首页失败，请手动设置！");
+            }
+        }
+    </script>
+    
+    <script>
+        function onCJFDHover() {
+            //鼠标移动到图片外框上的效果
+            var time = 100;
+            var p = $(".qk-main .qk-con .part04 .pakage");
+            p.hover(function () {
+                $(this).css("z-index", "2").children(".picbox-on").addClass("picbox-on-current").children(".toggle").css("display", "block").parent().animate({ "height": "320px" }, time);
+            }, function () {
+                p.css("z-index", "1").children(".picbox-on").stop().removeClass("picbox-on-current").children(".toggle").css("display", "none").parent().css({ "height": "284px" });
+            });
+        }
+        $(document).ready(function () {
+            $("#InternalSearchBox input[type='text']").live("keydown", function (event) {
+                var code = event.keycode ? parseInt(event.keycode) : parseInt(event.which);
+                if (code == 13) {
+                    InternalSearch(1);
+                }
+            })
+            if ($("#content").val()) {
+                $("#InternalSearchBox input[name='content']").val($("#content").val());
+                InternalSearch(1);
+            }
+        })
+
+        function searchRelatedArticles() {
+            var PYKM = $("#PYKM").val();
+            $("#PYKM").val("");
+            var param = GetInternalSearchParams(1);
+            var actionUrl = '/Search/Result';
+            var form = createActionForm(param, actionUrl, "post");
+            if (form != null) {
+                $(form).attr("target", "_blank");
+                $(form).submit();
+            }
+            $("#PYKM").val(PYKM);
+            return false;
+        }
+        var offsetTop = $("#Part02").offset().top;
+        function InternalSearch(pageindex) {
+            $(window).scrollTop(offsetTop);
+            $("#PastMagazine").hide();
+            if (pageindex == undefined || pageindex == 0) {
+                pageindex = 1;
+            }
+            var url = "/cjfd/detail/InteralPartialView";
+            var param = GetInternalSearchParams(pageindex);
+            doLoadInternalView(url, param);
+
+            /**时间倒置 交换位置**/
+            $("#InternalSearchBox .xiugai").each(function () {
+                var startTime = $(this).find("input[name=publishtimebegin]");
+                var endTime = $(this).find("input[name=publishtimeend]");
+
+                if ($(startTime).val() != undefined && $(endTime).val() != undefined && $(endTime) != "不  限" && $(endTime) != "不  限") {
+                    if (parseInt($(startTime).val().replace(/([^\u0000-\u00FF])/g, "")) > parseInt($(endTime).val().replace(/([^\u0000-\u00FF])/g, ""))) {
+                        var tmp = $(startTime).val();
+                        $(startTime).val($(endTime).val());
+                        $(startTime).siblings("b").html($(endTime).val());
+                        $(endTime).val(tmp);
+                        $(endTime).siblings("b").html(tmp);
+                    }
+                }
+            })
+        }
+
+        function GetInternalSearchParams(pageindex) {
+            //搜索期刊
+            var ZWKM = $("#ZWKM").val();
+            //搜索内容
+            var content = $("#InternalSearchBox input[name=content]").map(function () {
+                return $(this).val();
+            }).get().join("|");
+            var theme = $("#InternalSearchBox input[name=theme]").map(function () {
+                return $(this).val();
+            }).get().join("|");
+            var title = $("#InternalSearchBox input[name=title]").map(function () {
+                return $(this).val();
+            }).get().join("|");
+            var keyword = $("#InternalSearchBox input[name=keyword]").map(function () {
+                return $(this).val();
+            }).get().join("|");
+            var author = $("#InternalSearchBox input[name=author]").map(function () {
+                return $(this).val();
+            }).get().join("|");
+            var unit = $("#InternalSearchBox input[name=unit]").map(function () {
+                return $(this).val();
+            }).get().join("|");
+            var summary = $("#InternalSearchBox input[name=summary]").map(function () {
+                return $(this).val();
+            }).get().join("|");
+            var reference = $("#InternalSearchBox input[name=reference]").map(function () {
+                return $(this).val();
+            }).get().join("|");
+            var searchfund = $("#InternalSearchBox input[name=searchfund]").map(function () {
+                return $(this).val();
+            }).get().join("|");
+            var publishTimeBegin = $("#InternalSearchBox input[name=publishtimebegin]").map(function () {
+                return $(this).val();
+            }).get().join("|");
+            var publishTimeEnd = $("#InternalSearchBox input[name=publishtimeend]").map(function () {
+                return $(this).val();
+            }).get().join("|");
+            var originate = $("#InternalSearchBox input[name=originate]").map(function () {
+                return $(this).val();
+            }).get().join("|");
+            var mapnumber = $("#InternalSearchBox input[name=mapnumber]").map(function () {
+                return $(this).val();
+            }).get().join("|");
+            var PYKM = $("#PYKM").val();
+            var Order = $("#Order").val();
+            var param = {
+                Content: content,
+                Theme: theme,
+                Title: title,
+                Keyword: keyword,
+                Author: author,
+                Originate: originate,
+                PublishTimeBegin: publishTimeBegin,
+                PublishTimeEnd: publishTimeEnd,
+                PYKM: PYKM,
+                ZWKM: ZWKM,
+                SearchFund: searchfund,
+                Order: Order,
+                PageIndex: pageindex,
+                Unit: unit,
+                MapNumber: mapnumber,
+                Reference: reference,
+                Summary: summary
+            };
+            return param;
+        }
+
+        //加载部分视图
+        function doLoadInternalView(postUrl, param) {
+            $.ajax({
+                url: postUrl,
+                type: "post",
+                data: param,
+                error: function (request, error, status) {
+                    //console.log(postUrl);
+                },
+                success: function (result, status) {
+                    if ($("#InteralSearchResult") != undefined) {
+                        $("#InteralSearchResult").show();
+                        $("#InteralSearchResult").html("");
+                        $("#InteralSearchResult").append(result);
+                    }
+
+                }
+            });
+        }
+
+        function showPublicList() {
+            $("#InteralSearchResult").hide();
+            $("#PastMagazine").show();
+        }
+
+        function sortByStatus(obj) {
+            var sortType = $(obj).attr("val");
+            $("#Order").val(sortType);
+            InternalSearch(1);
+        }
+
+
+        function pageNavigation(number) {
+            if (number == null || number == undefined) {
+                number = 1;
+            }
+            if (isNaN(number)) {
+                return false;
+            }
+            if (number == 0) {
+                return false;
+            }
+            InternalSearch(number);
+        }
+    </script>
+
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1257838113'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1257838113%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
